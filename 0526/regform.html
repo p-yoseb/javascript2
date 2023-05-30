@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 폼</title>
+    <link rel="stylesheet" href="css/regform.css">
+</head>
+<body>
+    <h2> 회원가입 </h2>
+    <hr>
+    <div id="regform">
+        <form name="form1">
+            <label for="">이름</label><br>
+            <input type="text" name="name" size="40"><br>
+            <hr>
+            <label for="">이메일</label><br>
+            <input type="email" name="email" size="40"><br>
+            <button type="button" onclick="signUp()">가입</button>
+            <button type="button" onclick="open1()">회원 리스트</button>
+        </form>
+    </div>
+
+    <div id="result" class="result">
+        <h3> 가입 정보 </h3>
+        <hr>
+        이름 : <span id="rname"></span><br>
+        이메일 : <span id="remail"></span><br>
+        <button type="button" onclick="back()">뒤로가기</button>
+        <button type="button" onclick="open1()">회원 리스트</button>
+    </div>
+
+    <div id="listform">
+        <span id="listspan"></span>
+        <button type="button" onclick="back()">뒤로가기</button>
+    </div>
+
+
+    <script src="js/regform.js"></script>
+    
+</body>
+</html>

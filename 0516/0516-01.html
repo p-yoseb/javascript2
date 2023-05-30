@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0516-01</title>
+    <script src="js/0516-01.js"></script>
+</head>
+<body>
+    <h2> 버튼을 클릭했을때 배경색 변경하기 </h2>
+    <button id="button">버튼</button>
+
+    <div id="box"></div>
+    <button id="button1">배경색</button>
+    <button id="button2">테두리색</button>
+    <button id="button3">테두리크기</button>
+<hr>
+    <button onclick="chColor(this,'red')">버튼5</button>
+    <button onclick="chColor(this,'blue')">버튼6</button>
+    <hr>
+    <button id="button7" onmouseover="chColor2(this,'yellow')" onmouseout="chColor2(this,'pink')">버튼7</button>
+
+    <form action="">
+        x값을 입력하시오 : 
+    <input type="text" id="x">
+    <br>
+    y값을 입력하시오 : 
+    <input type="text" id="y">
+    <br>
+    <input type="button" onclick="add2()" value="버튼">
+</form>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+
+    <script>
+        function chColor(obj,color){
+            console.log(color+"가 적용됨");
+            obj.style.color=color;
+        }
+
+        var color=["red","pink","blue","gray","orange","gold"];
+
+        var body=document.getElementsByTagName('body')[0]; // 배열
+        var body=document.querySelector('body');
+
+        // 객체.이벤트타입=이벤트리스너;
+        var i=0;
+        var j=0;
+        var x=0;
+        button.onclick=function(){
+            i++;
+            i=i%color.length;
+            body.style.backgroundColor=color[i];
+        }
+        // 버튼하나 만들어서, div 박스 하나 생성해서 버튼 클릭하면 배경색 변경하게 하기
+        
+        button1.onclick=function(){
+            x++;
+            x=x%color.length;
+            box.style.backgroundColor=color[x];
+        }
+        button2.onclick=function(){
+            i++;
+            i=i%color.length;
+            box.style.borderColor=color[i];
+        }
+        button3.onclick=function(){
+            j++;
+            if(j==10) j=0;
+            box.style.border=`${j}px solid ${color[i]}`;
+        }
+
+
+    </script>
+
+</body>
+</html>

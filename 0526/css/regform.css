@@ -1,0 +1,71 @@
+h2{
+    background: rgb(145, 224, 255);
+    margin: auto;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+#regform{
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    background: darkgray;
+    border-radius: 10px;
+    color:aliceblue;
+}
+#regform button{
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+    text-shadow: 1px 1px 1px gray;
+}
+#regform label{
+    text-shadow: 1px 1px 1px gray;
+}
+#regform input{
+    height: 20px;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+}
+
+h3{
+    background: lightblue;
+    margin: auto;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    color: black;
+    border-radius: 10px;
+}
+#result{
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    background: darkgray;
+    border-radius: 10px;
+    color:aliceblue;
+}
+#result button{
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+    text-shadow: 1px 1px 1px gray;
+}
+#listform{
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: darkgray;
+    border-radius: 10px;
+    color:aliceblue;
+}
+#listform button{
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+    text-shadow: 1px 1px 1px gray;
+    z-index: 1;
+}
